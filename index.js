@@ -19,10 +19,16 @@
 
 
 // Iteration 2: Conditionals
-/*2.1. Depending on which name is longer, print:
-- The driver has the longest name, it has XX characters. or
-- It seems that the navigator has the longest name, it has XX characters. or
-- Wow, you both have equally long names, XX characters!. */
+/*
+2.1. Depending on which name is longer, print:
+
+    - The driver has the longest name, it has XX characters. or
+
+    - It seems that the navigator has the longest name, it has XX characters. or
+    
+    - Wow, you both have equally long names, XX characters!. 
+
+*/
 
 if (hacker1.length > hacker2.length){
 
@@ -68,14 +74,22 @@ console.log(reHacker2[4]+reHacker2[3]+reHacker2[2]+reHacker2[1]+reHacker2[0]);
 /*
 3.3 Depending on the lexicographic order of the strings, print:
 
-The driver's name goes first.
-Yo, the navigator goes first, definitely.
-What?! You both have the same name?
+- The driver's name goes first.
+
+- Yo, the navigator goes first, definitely.
+
+- What?! You both have the same name?
+
 */
 
-if (hacker1[0] < hacker2[0]){
-
+if (hacker1.charCodeAt(hacker1[0]) < hacker2.charCodeAt(hacker2[0])) {
+  
+    console.log("The driver's name goes first.")
     
-
-
-}
+  }
+  else if (hacker1.charCodeAt(hacker1[0]) > hacker2.charCodeAt(hacker2[0])) {
+    
+    console.log("Yo, the navigator goes first, definitely.")
+    
+  }
+   else {(console.log("What?! You both have the same name?"));}
